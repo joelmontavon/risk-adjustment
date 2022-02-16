@@ -1,12 +1,3 @@
-<style>
-.icon:hover {
-  opacity: 0.7;
-}
-.icon { 
-    overflow: hidden;
-    filter: grayscale(100%);
-}
-</style>
 <a href="https://www.linkedin.com/in/joel-montavon-704808a/" target="_blank"><img class="icon" width="60" height="60" src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/logos/In-Blue-Logo.png.original.png" style="position: absolute; right: 80px; top: 10px;"></img></a>
 <a href="https://github.com/joelmontavon/risk-adjustment" target="_blank"><img class="icon" width="80" height="80" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="position: absolute; right: 0px; top: 0px;"></img></a>
 <h1>Risk Adjustment for Social Determinants of Health (SDOH)</h1>
@@ -1331,14 +1322,3 @@ plt.show()
 
     
 ![png](output_65_0.png)
-    
-
-
-<script>
-window.addEventListener('load', function() {
-	let message = { height: document.body.scrollHeight, width: document.body.scrollWidth };	
-
-	// window.top refers to parent window
-	window.top.postMessage(message, "*");
-});
-</script>
