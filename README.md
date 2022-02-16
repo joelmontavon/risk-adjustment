@@ -1,10 +1,21 @@
+<style>
+.icon:hover {
+  opacity: 0.7;
+}
+.icon { 
+    overflow: hidden;
+    filter: grayscale(100%);
+}
+</style>
+<a href="https://www.linkedin.com/in/joel-montavon-704808a/" target="_blank"><img class="icon" width="60" height="60" src="https://content.linkedin.com/content/dam/me/brand/en-us/brand-home/logos/In-Blue-Logo.png.original.png" style="position: absolute; right: 80px; top: 10px;"></img></a>
+<a href="https://github.com/joelmontavon/risk-adjustment" target="_blank"><img class="icon" width="80" height="80" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style="position: absolute; right: 0px; top: 0px;"></img></a>
 <h1>Risk Adjustment for Social Determinants of Health (SDOH)</h1>
 <p>This tutorial will explain how to adjust healthcare quality measures for SDOH factors.</p>
 <p>For this tutorial, I will use the following publicly available datasets:</p>
 <ul>
-    <li><b><a href="https://www.cms.gov/files/zip/2022-star-ratings-data-table-oct-06-2021.zip">2022 Star Ratings Data Table</a></b>: CMS publishes the data related to their Star Ratings on their <a href="https://www.cms.gov/Medicare/Prescription-Drug-Coverage/PrescriptionDrugCovGenIn/PerformanceData">Part C and D Performance Data</a> webpage.</li>
-    <li><b><a href="https://www.cms.gov/files/zip/monthly-enrollment-cpsc-december-2020.zip">Monthly Enrollment by CPSC – December 2020 (ZIP)</a></b>: CMS publishes data related to enrollment in Medicare contracts on their <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/MCRAdvPartDEnrolData/Monthly-Enrollment-by-Contract-Plan-State-County">Medicare Advantage/Part D Contract and Enrollment Data</a> webpage.</li>
-    <li><b><a href="https://www.ahrq.gov/sites/default/files/wysiwyg/sdohchallenge/data/county_2018.XLSX">Social Determinants of Health (SDOH) Beta Data File</a></b>: The Agency for Healthcare Research and Quality (AHRQ) has published SDOH data on their <a href="https://www.ahrq.gov/sdoh/data-analytics/sdoh-data.html">SDOH Database</a> webpage. The data includes variables related to social context (e.g., age, race/ethnicity, veteran status), economic context (e.g., income, unemployment rate), education, physical infrastructure (e.g, housing, crime, transportation), and healthcare context (e.g., health insurance).</li>
+    <li><b><a href="https://www.cms.gov/files/zip/2022-star-ratings-data-table-oct-06-2021.zip">2022 Star Ratings Data Table</a></b>: CMS publishes the data related to their Star Ratings on their <a href="https://www.cms.gov/Medicare/Prescription-Drug-Coverage/PrescriptionDrugCovGenIn/PerformanceData" target="_blank">Part C and D Performance Data</a> webpage.</li>
+    <li><b><a href="https://www.cms.gov/files/zip/monthly-enrollment-cpsc-december-2020.zip">Monthly Enrollment by CPSC – December 2020 (ZIP)</a></b>: CMS publishes data related to enrollment in Medicare contracts on their <a href="https://www.cms.gov/Research-Statistics-Data-and-Systems/Statistics-Trends-and-Reports/MCRAdvPartDEnrolData/Monthly-Enrollment-by-Contract-Plan-State-County" target="_blank">Medicare Advantage/Part D Contract and Enrollment Data</a> webpage.</li>
+    <li><b><a href="https://www.ahrq.gov/sites/default/files/wysiwyg/sdohchallenge/data/county_2018.XLSX">Social Determinants of Health (SDOH) Beta Data File</a></b>: The Agency for Healthcare Research and Quality (AHRQ) has published SDOH data on their <a href="https://www.ahrq.gov/sdoh/data-analytics/sdoh-data.html" target="_blank">SDOH Database</a> webpage. The data includes variables related to social context (e.g., age, race/ethnicity, veteran status), economic context (e.g., income, unemployment rate), education, physical infrastructure (e.g, housing, crime, transportation), and healthcare context (e.g., health insurance).</li>
 </ul>
 
 <p>First, I'm going to setup a variable with my path so I can read the data into dataframes.</p>
@@ -49,7 +60,19 @@ enroll
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -252,7 +275,19 @@ corr
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -396,7 +431,19 @@ sdoh
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -991,7 +1038,19 @@ training
 
 
 <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -1323,4 +1382,11 @@ plt.show()
     
 
 
+<script>
+window.addEventListener('load', function() {
+	let message = { height: document.body.scrollHeight, width: document.body.scrollWidth };	
 
+	// window.top refers to parent window
+	window.top.postMessage(message, "*");
+});
+</script>
